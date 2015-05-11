@@ -19,6 +19,9 @@ set -e
 # Check for CLONING_URL, if it isn't set, bomb out
 if [ -n "$CLONING_URL" ]; then echo ; else echo "CLONING_URL Missing"; exit 1; fi
 
+# Check for CLONING_PATH, if it isn't set, bomb out
+if [ -n "$CLONING_PATH" ]; then echo ; else echo "CLONING_PATH Missing"; exit 1; fi
+
 # Check for BASE_BRANCH, if it isn't set, bomb out
 if [ -n "$BASE_BRANCH" ]; then echo ; else echo "BASE_BRANCH Missing"; exit 1; fi
 
@@ -29,4 +32,4 @@ if [ -n "$OTHER_BRANCHES" ]; then echo ; else echo "OTHER_BRANCHES Missing"; exi
 # Initial Build
 
 # Call marge
-/usr/local/bin/marge.py "$CLONING_URL" "$BASE_BRANCH" "$OTHER_BRANCHES"
+/usr/local/bin/marge.py "$CLONING_URL" "$CLONING_PATH" "$BASE_BRANCH" "$OTHER_BRANCHES"
