@@ -3,6 +3,7 @@
 # marge.py
 # This tool is meant to provide an advance check on merging in features in development.
 # It can be used directly or in conjunction with a service such as Jenkins.
+# Copyright © 2015 WalmartLabs. All rights reserved.
 
 import os
 import sys

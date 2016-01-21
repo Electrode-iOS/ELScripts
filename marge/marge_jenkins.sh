@@ -11,7 +11,7 @@ set -e
 # it should be executed on a Jenkins server. It is possible 
 # to pass in environmental variables via Jenkins. 
 #
-#
+# Copyright © 2015 WalmartLabs. All rights reserved.
 
 ###########################################################
 # Requirements Check
